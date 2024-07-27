@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>TP5 - E6</title>
+</head>
+<body>
+    <header class="bg-primary fs-1 text-white text-center py-2">
+        <h1>El temporizador más exacto</h1>
+    </header>
+        <main>
+            <div class="container mt-5">
+                <h2>Ingrese una hora</h2>
+                <form id="horaForm" class="form">
+                    <label for="hora" class="mr-2">Hora</label>
+                    <input type="text" id="hora" name="hora" maxlength="2" class="form-control mr-2" required>
+                    <label for="minutos" class="mr-2">Minutos</label>
+                    <input type="text" id="minutos" name="minutos" maxlength="2" class="form-control mr-2" required>
+                    <label for="segundos" class="mr-2">Segundos</label>
+                    <input type="text" id="segundos" name="segundos" maxlength="2" class="form-control mr-2" required>
+                </form>
+                <div id="timer" class="my-4 text-center bg-dark text-white p-3 rounded">00:00:00</div>
+                <div class="text-center">
+                    <button id="btnIniciar" class="btn btn-success">Iniciar</button>
+                    <button id="btnPausar" class="btn btn-warning" disabled>Pausar</button>
+                    <button id="btnReiniciar" class="btn btn-danger" disabled>Reiniciar</button>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-primary fs-5 text-white py-2">
+            <p class="text-center">&copy; Todos los derechos reservados</p>
+          </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

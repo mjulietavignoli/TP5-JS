@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Maria Julieta Vignoli" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>TP5 - E2</title>
+  </head>
+  <body>
+    <header class="bg-warning fs-1 text-black text-center py-2">
+      <p>¡Bienvenido al formulario de Persona!</p>
+    </header>
+    <main class="bg-dark pt-3">
+      <div class="container d-flex justify-content-center">
+        <div class="col-12 col-md-8">
+          <form id="personaForm" class="bg-light p-4 rounded">
+            <h2 class="text-center mb-4">Formulario de Persona</h2>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+              <div class="invalid-feedback">Ingrese un nombre valido</div>
+            </div>
+            <div class="mb-3">
+              <label for="DNI" class="form-label">DNI:</label>
+              <input type="text" class="form-control" id="DNI" name="DNI" required>
+              <div class="invalid-feedback">Ingrese un DNI valido</div>
+            </div>
+            <div class="mb-3">
+              <label for="sexo" class="form-label">Sexo:</label>
+              <select id="sexo" name="sexo" class="form-select" required>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="peso" class="form-label">Peso (en kg):</label>
+              <input type="number" class="form-control" id="peso" name="peso" required>
+              <div class="invalid-feedback">Ingrese un peso valido</div>
+            </div>
+            <div class="mb-3">
+              <label for="altura" class="form-label">Altura (en cm):</label>
+              <input type="number" class="form-control" id="altura" name="altura" required>
+              <div class="invalid-feedback">Ingrese una altura valida</div>
+            </div>
+            <div class="mb-3">
+              <label for="anioNacimiento" class="form-label">Año de Nacimiento:</label>
+              <input type="number" class="form-control" id="anioNacimiento" name="anioNacimiento" required>
+              <div class="invalid-feedback">Ingrese un año valido</div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <button id="btn-mostrarGeneracion" type="submit" class="btn btn-outline-warning">Mostrar Generación</button>
+              <button id="btn-esMayor" type="button" class="btn btn-outline-warning">Es Mayor de Edad</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark fs-5 text-warning py-2">
+      <p class="text-center">&copy; Todos los derechos reservados</p>
+    </footer>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

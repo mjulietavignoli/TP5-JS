@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+main{
+    height: 100%;
+    background: linear-gradient(to bottom, #001f3f, #0074d9);
+}
+
+.date-time-container {
+    text-align: center;
+}
+.bg{
+    background-color: rgba(8, 8, 8, 0.87);
+}
+.date {
+    height: 90px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.clock {
+    height: 130px;
+    font-size: 70px;
+}
+
+footer {
+    margin-top: auto;
+}
